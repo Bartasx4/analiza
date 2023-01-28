@@ -10,6 +10,7 @@ class Analiza:
     def __init__(self, book_path=None):
         self.book_path = 'C:\\Users\\Bartek\\Documents\\books_pl' if book_path is None else book_path
         self.unique_list = self._clean_words(self._load_words())
+        print(f'Words: {len(self.unique_list)}')
 
     def char_position(self):
         ...
